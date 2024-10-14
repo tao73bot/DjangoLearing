@@ -1,0 +1,8 @@
+{% block content %}
+test content for forms
+<form method="POST">
+    {{form.as_p}}
+    {% csrf_token %}
+    <button type='submit'>Search</button>
+</form>
+{% endblock content %}
